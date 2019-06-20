@@ -105,7 +105,7 @@ Player.prototype.handleInput = function(key) {
     case 'up':
       this.y = this.y - 83;
       if (this.y < 0) {
-        this.y = -14;
+        this.y = -14
         setTimeout(() => {
           count = count + 1;
           this.x = 200;

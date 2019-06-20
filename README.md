@@ -27,9 +27,6 @@ This repository is the starter code for _all_ Udacity students. Therefore, we mo
                                                                     `img/char-boy.png`, and on soon....)
 
 -   I follow the below steps to accomplished the Project :
-
-### In Html file
-
 -   Adding the icon using link tag and also title
 -   Title of the page **Arcade game**
     ### In  app.js file
