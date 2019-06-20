@@ -39,6 +39,7 @@ Enemy.prototype.update = function(dt) {
     player.x = 200;
     player.y = 400;
     player.move = 'images/char-boy.png';
+    Swal.fire('You lose the game') 
   }
 
   // You should multiply any movement by the dt parameter
@@ -105,6 +106,7 @@ Player.prototype.handleInput = function(key) {
       this.y = this.y - 83;
       if (this.y < 0) {
         this.y = -14;
+        Swal.fire('you got one point')
         setTimeout(() => {
           count = count + 1;
           this.x = 200;
