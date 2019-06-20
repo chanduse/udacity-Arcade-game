@@ -10,7 +10,7 @@ var Enemy = function(x, y, move) {
   this.move = move;
   // The image/sprite for our enemies, this uses
   // a helper we've provided to easily load images
-  this.sprite = 'images/lorry.png';
+  this.sprite = 'images/enemy-bug.png';
 };
 
 // Update the enemy's position, required method for game
@@ -29,7 +29,7 @@ Enemy.prototype.update = function(dt) {
     this.move = 100 + Math.floor(Math.random() * 100);
   }
   // player moves by char-boy and count are adding into count
-  if (player.x < this.x + 80 && player.x + 80 > this.x && player.y < this.y + 80 && player.y + 80 > this.y) {
+  if (player.x < this.x + 80 && player.x + 80 > this.x && player.y < this.y + 60 && player.y + 60 > this.y) {
     if (topScore < count) {
       topScore = count;
       ctx.fillText("highScore : " + topScore, 400, 20);
